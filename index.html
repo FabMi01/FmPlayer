@@ -393,7 +393,7 @@ async function itunes(a,t){
  try{const r=await fetch(W()+'/cover?a='+encodeURIComponent(clean(a))+'&t='+encodeURIComponent(clean(t)));const j=await r.json();return j.url?j.url.replace(/\d+x\d+bb/,'1200x1200bb'):null}
  catch(e){if(!coverWarn){coverWarn=true;msg('Jaquettes : mettez à jour le Worker Cloudflare');setTimeout(()=>msg(),6000)}}
  return null}
-function setMeta(title,artist,pic){if('mediaSession'in navigator)navigator.mediaSession.metadata=new MediaMetadata({title,artist,album:'📳',artwork:pic?[{src:pic,sizes:'600x600'}]:[]})}
+function setMeta(title,artist,pic){if('mediaSession'in navigator)navigator.mediaSession.metadata=new MediaMetadata({title,artist,album:'▶️',artwork:pic?[{src:pic,sizes:'600x600'}]:[]})}
 async function showTrack(){
  const i=ord[pos],fn=nameOf(i),hasF=fn.includes(' - ');
  const [a,t]=hasF?fn.split(/ - (.*)/s):['',fn];
