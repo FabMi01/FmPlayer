@@ -5,10 +5,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Freebox Player">
+<meta name="apple-mobile-web-app-title" content="FmPlayer">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-180.png">
-<title>Freebox Player</title>
+<title>FmPlayer</title>
 <style>
 :root{--yel:#d49a00;--ov:rgba(242,242,247,0);--ov2:rgba(255,255,255,.4);--halo:rgba(255,255,255,.95);--glass:rgba(255,255,255,.55);--bg:#f2f2f7;--fg:#111;--sub:#8a8a8e;--card:#fff;--acc:#fa2d48}
 :root[data-t=dark]{--ov:rgba(0,0,0,.6);--ov2:rgba(0,0,0,.55);--halo:rgba(0,0,0,.9);--glass:rgba(0,0,0,.5);--bg:#000;--fg:#fff;--sub:#8e8e93;--card:#1c1c1e}
@@ -393,7 +393,7 @@ body.ipod[data-ipc=graphite] #ipmsg{color:#ff9b9b}body.ipod[data-ipc=graphite] #
   <canvas id="ipwave"></canvas>
   <div class="ip-screen">
    <div class="ip-head"><span id="ipst">▶</span><span id="ipmode">Lecture en cours</span><span class="ip-ic"><i id="ipkar" aria-label="Karaoké"><svg viewBox="0 0 24 24"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-3.1A7 7 0 0 0 19 11z"/></svg></i><i id="iply" aria-label="Paroles"><svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 012 2v10a2 2 0 01-2 2H9l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2zm3 4v2h10V7zm0 4v2h7v-2z"/></svg></i><i id="ipsh"></i><i id="iprp"></i></span></div>
-   <div class="ip-main"><div id="ipart"></div><div class="ip-txt"><div id="iptitle"></div><div id="ipartist"></div><div id="ipalb">Freebox Player</div><div id="ipmsg"></div></div></div>
+   <div class="ip-main"><div id="ipart"></div><div class="ip-txt"><div id="iptitle"></div><div id="ipartist"></div><div id="ipalb">FmPlayer</div><div id="ipmsg"></div></div></div>
    <div class="ip-prog"><div id="ipbar"><i id="ipfill"></i></div><div class="ip-t"><span id="ipc">0:00</span><span id="ipr">-0:00</span></div></div>
   </div>
  </div>
@@ -408,7 +408,7 @@ body.ipod[data-ipc=graphite] #ipmsg{color:#ff9b9b}body.ipod[data-ipc=graphite] #
 <div id="wdlg"><div class="dbox"><h3>Adresse du Worker</h3><input type="text" id="wurl" placeholder="https://xxx.workers.dev" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"><input type="password" id="wcode" placeholder="Code secret des paroles (facultatif)" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"><div class="dbtn"><button id="wcancel">Annuler</button><button id="wok">OK</button></div></div></div>
 <div id="lydlg"><div class="dbox"><h3>Mes paroles</h3><small>Collez le texte des paroles de ce titre. Avec des repères de temps [mm:ss.xx] devant chaque ligne (format LRC), elles se synchronisent.</small><textarea id="lyta" placeholder="Collez les paroles ici"></textarea><div class="dbtn"><button id="lydel">Supprimer</button><button id="lycancel">Annuler</button><button id="lyok">OK</button></div></div></div>
 <div id="neo">
- <div class="nh"><button id="npl" class="nbtn sm" aria-label="Playlist"><svg viewBox="0 0 24 24"><path d="M3 6h12v2H3zM3 11h12v2H3zM3 16h8v2H3zM17 6v9.3a3 3 0 1 0 2 2.7V9h3V6z"/></svg></button><span class="nht">Freebox Player</span><button id="nset" class="nbtn sm" aria-label="Réglages"></button></div>
+ <div class="nh"><button id="npl" class="nbtn sm" aria-label="Playlist"><svg viewBox="0 0 24 24"><path d="M3 6h12v2H3zM3 11h12v2H3zM3 16h8v2H3zM17 6v9.3a3 3 0 1 0 2 2.7V9h3V6z"/></svg></button><span class="nht">FmPlayer</span><button id="nset" class="nbtn sm" aria-label="Réglages"></button></div>
  <div class="nmid"><div id="nring"><svg viewBox="0 0 200 200"><circle class="rt" cx="100" cy="100" r="94"/><circle id="nprog" class="rp" cx="100" cy="100" r="94" transform="rotate(-90 100 100)"/><circle id="ndot" r="4.4" cx="100" cy="6"/></svg><div id="nart"></div></div></div>
  <div class="ntxt"><div id="ntitle"></div><div id="nartist"></div></div>
  <canvas id="neq"></canvas>
@@ -420,7 +420,7 @@ body.ipod[data-ipc=graphite] #ipmsg{color:#ff9b9b}body.ipod[data-ipc=graphite] #
 <div id="vin">
  <div class="vside"><i class="vbulge"></i><button id="vnote" aria-label="Playlist"><svg viewBox="0 0 24 24"><path d="M9 3v10.6A3.5 3.5 0 1 0 11 17V7h6V3z"/></svg></button></div>
  <div class="vmain">
-  <div class="vh"><span class="vht">Freebox Player</span><span class="vhr"><button id="vdn" aria-label="Jour / nuit"></button><button id="vmenu" aria-label="Réglages"><svg viewBox="0 0 28 16"><rect x="0" y="0" width="28" height="5" rx="2.5"/><rect x="8" y="10" width="20" height="5" rx="2.5"/></svg></button></span></div>
+  <div class="vh"><span class="vht">FmPlayer</span><span class="vhr"><button id="vdn" aria-label="Jour / nuit"></button><button id="vmenu" aria-label="Réglages"><svg viewBox="0 0 28 16"><rect x="0" y="0" width="28" height="5" rx="2.5"/><rect x="8" y="10" width="20" height="5" rx="2.5"/></svg></button></span></div>
   <div class="vcov"><div id="vdisc"><i></i></div><div id="vart"></div></div>
   <div class="vtxt"><div id="vtitle"></div><div id="vartist"></div></div>
   <svg id="vwave" viewBox="-12 0 324 76"><path id="vbase" fill="none"/><path id="vprog" fill="none"/><circle id="vdot" r="6.5" cx="0" cy="38"/></svg>
@@ -694,7 +694,7 @@ async function itunes(a,t){
  try{const r=await fetch(W()+'/cover?a='+encodeURIComponent(clean(a))+'&t='+encodeURIComponent(clean(t)));const j=await r.json();return j.url?j.url.replace(/\d+x\d+bb/,'1200x1200bb'):null}
  catch(e){if(!coverWarn){coverWarn=true;msg('Jaquettes : mettez à jour le Worker Cloudflare');setTimeout(()=>msg(),6000)}}
  return null}
-function setMeta(title,artist,pic){if('mediaSession'in navigator)navigator.mediaSession.metadata=new MediaMetadata({title,artist,album:'Freebox Player',artwork:pic?[{src:pic,sizes:'600x600'}]:[]})}
+function setMeta(title,artist,pic){if('mediaSession'in navigator)navigator.mediaSession.metadata=new MediaMetadata({title,artist,album:'FmPlayer',artwork:pic?[{src:pic,sizes:'600x600'}]:[]})}
 async function showTrack(){
  const i=ord[pos],fn=nameOf(i),hasF=fn.includes(' - ');
  const [a,t]=hasF?fn.split(/ - (.*)/s):['',fn];
